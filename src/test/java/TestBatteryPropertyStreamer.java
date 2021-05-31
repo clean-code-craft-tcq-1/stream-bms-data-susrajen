@@ -9,12 +9,12 @@ import org.junit.Test;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
-import batteryDataGenerator.DataGenerator;
-import batteryDataGenerator.RandomDataGenerator;
-import batteryProperty.Battery;
-import batteryPropertyReporter.ConsolePropertyReporter;
-import batteryPropertyReporter.PropertyReporter;
-import batteryStreamer.BatteryPropertyStreamer;
+import batterydatagenerator.DataGenerator;
+import batterydatagenerator.RandomDataGenerator;
+import batteryproperty.Battery;
+import batterypropertyreporter.ConsolePropertyReporter;
+import batterypropertyreporter.PropertyReporter;
+import batterystreamer.BatteryPropertyStreamer;
 
 public class TestBatteryPropertyStreamer {
 	BatteryPropertyStreamer propertyStreamer;

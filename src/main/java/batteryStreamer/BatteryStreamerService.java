@@ -1,10 +1,10 @@
-package batteryStreamer;
+package batterystreamer;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
-import batteryDataGenerator.DataGenerator;
-import batteryDataGenerator.RandomDataGenerator;
-import batteryPropertyReporter.ConsolePropertyReporter;
-import batteryPropertyReporter.PropertyReporter;
+import batterydatagenerator.DataGenerator;
+import batterydatagenerator.RandomDataGenerator;
+import batterypropertyreporter.ConsolePropertyReporter;
+import batterypropertyreporter.PropertyReporter;
 
 public class BatteryStreamerService {
 	public static void main(String args[]) throws JsonProcessingException, InterruptedException {

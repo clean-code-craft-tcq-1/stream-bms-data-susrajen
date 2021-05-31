@@ -1,4 +1,4 @@
-package batteryDataGenerator;
+package batterydatagenerator;
 
 import java.util.Random;
 

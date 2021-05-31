@@ -1,9 +1,9 @@
-package batteryPropertyReporter;
+package batterypropertyreporter;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import batteryProperty.Battery;
+import batteryproperty.Battery;
 
 public class ConsolePropertyReporter implements PropertyReporter {
 

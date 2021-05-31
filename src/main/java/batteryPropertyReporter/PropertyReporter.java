@@ -1,8 +1,8 @@
-package batteryPropertyReporter;
+package batterypropertyreporter;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
-import batteryProperty.Battery;
+import batteryproperty.Battery;
 
 public interface PropertyReporter {
 	void printReport(Battery battery) throws JsonProcessingException;

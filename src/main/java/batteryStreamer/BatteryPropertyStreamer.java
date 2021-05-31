@@ -1,11 +1,11 @@
-package batteryStreamer;
+package batterystreamer;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
-import batteryDataGenerator.DataGenerator;
-import batteryProperty.Battery;
-import batteryProperty.BatteryPropertyBoundaries;
-import batteryPropertyReporter.PropertyReporter;
+import batterydatagenerator.DataGenerator;
+import batteryproperty.Battery;
+import batteryproperty.BatteryPropertyBoundaries;
+import batterypropertyreporter.PropertyReporter;
 
 public class BatteryPropertyStreamer {
 	private DataGenerator dataGenerator;

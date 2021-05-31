@@ -1,4 +1,4 @@
-package batteryProperty;
+package batteryproperty;
 
 public class BatteryPropertyBoundaries {
 	public final static Float MIN_TEMPERATURE = 0.0f;

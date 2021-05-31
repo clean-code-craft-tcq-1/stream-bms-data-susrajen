@@ -1,4 +1,4 @@
-package batteryProperty;
+package batteryproperty;
 
 public class Battery {
 	private Float temperature;
