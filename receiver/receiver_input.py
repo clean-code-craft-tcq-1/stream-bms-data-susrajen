@@ -2,9 +2,7 @@ import json
 def read_sender_input():
     try:
         input_data = input()
-        print(input_data)
         data_dict = json.loads(input_data)
-        print(f' dict: {data_dict}')
         return get_values(data_dict)             
     except EOFError:
         return None, None, None
