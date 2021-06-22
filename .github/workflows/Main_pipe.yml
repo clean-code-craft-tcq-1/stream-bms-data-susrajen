@@ -26,6 +26,6 @@ jobs:
           flake8 . --count --exit-zero --max-line-length=80 --ignore=E111,E121,E126 --statistics
       - name: build
         #run: gcc -DMAIN -Wall -Wextra -o SenderExec ./Sender/src/*.c
-        run : mvn compile exec:java -Dexec.mainClass="batterystreamer.BatteryStreamerService" | python ./Receiver/receiver_input.py
+        run : mvn compile exec:java -Dexec.mainClass="batterystreamer.BatteryStreamerService" | python ./receiver/receiver_input.py
       #- name: Pipe run
       #  run: ./SenderExec | python ./Receiver/receiver_main.py
