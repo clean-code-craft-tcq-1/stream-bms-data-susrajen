@@ -12,7 +12,7 @@ def read_sender_input():
 def get_values(data_dict):
     temperature = data_dict['temperature']
     soc = data_dict['soc']
-    chargeRate = data_dict['charge_rate']
+    chargeRate = data_dict['chargeRate']
     return temperature, soc, chargeRate
 
 temperature_lst = []
