@@ -10,7 +10,7 @@ def read_sender_input():
 def get_values(data_dict):
     temperature = data_dict['temperature']
     soc = data_dict['soc']
-    chargeRate = data_dict['charge_rate'] 
+    chargeRate = data_dict['chargeRate'] 
     validate_data = check_data_type(data_dict)
     return temperature, soc, chargeRate , validate_data
 
