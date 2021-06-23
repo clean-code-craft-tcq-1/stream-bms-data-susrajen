@@ -21,7 +21,7 @@ def cal_values(parameter):
     parameter_values['min'] = min(parameter)
     parameter_values['max'] = max(parameter)
     if len(parameter)>= 5:
-       parameter_values['simple moving average'] = sum(parameter[-5:])/5
+       parameter_values['simple moving average'] = round(sum(parameter[-5:])/5,3)
     return parameter_values
 
 def print_to_consol(para_values):
