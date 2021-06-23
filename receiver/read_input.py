@@ -19,7 +19,10 @@ def check_data_type(data_dict):
     for k, v in data_dict.items():
         if type(v) == int or type(v) == float :
             count = count +1
-    if count ==3:
+    return result_data_type(count)
+
+def result_data_type(value):
+    if value ==3:
         return "data_is_correct"
     else:
         return "data_is_not_correct"
