@@ -5,13 +5,22 @@ def read_sender_input():
         data_dict = json.loads(input_data)
         return get_values(data_dict)             
     except EOFError:
-        return None, None, None
+        return None, None, None, None
 
 def get_values(data_dict):
     temperature = data_dict['temperature']
     soc = data_dict['soc']
-    chargeRate = data_dict['chargeRate']
-    return temperature, soc, chargeRate
+    chargeRate = data_dict['charge_rate']
+    validate_data = check_data_type(data_dict)
+    return temperature, soc, chargeRate , validate_data
+
+def check_data_type(data_dict):
+    for k, v in data_dict.items():
+        if type(v) == int or type(v) == float :
+            return "data_is_correct"
+        else:
+            return "data_is_not_correct"
+
 
 temperature_lst = []
 chargeRate_lst = []
@@ -47,8 +56,10 @@ def print_to_consol(para_values):
 if __name__ == '__main__':
 
     while True:
-        temperature,soc,chargeRate = read_sender_input()
+        temperature,soc,chargeRate, validate_data = read_sender_input()
         if temperature == None or chargeRate == None or soc == None  :
+            break
+        elif validate_data == 'data_is_not_correct' :
             break
         get_para_list(temperature,soc,chargeRate)
         x = min_max_smavg(temperature_lst, chargeRate_lst, soc_lst)
