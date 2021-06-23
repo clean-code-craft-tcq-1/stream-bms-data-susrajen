@@ -36,6 +36,4 @@ jobs:
         run:  mvn -B package --file pom.xml -Dmaven.test.skip=true
         
       - name: Pipe Java and Python
-        run : java -jar target/BMSStreaming-0.0.1-SNAPSHOT-jar-with-dependencies.jar | python ./receiver/receiver_input.py
-      #- name: Pipe run
-      #  run: ./SenderExec | python ./Receiver/receiver_main.py
+        run : java -jar target/BMSStreaming-0.0.1-SNAPSHOT-jar-with-dependencies.jar | python ./stream_receiver/main.py
